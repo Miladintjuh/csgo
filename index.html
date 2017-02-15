@@ -22,6 +22,15 @@
                 mediaElement.play();
         }
 
+        /**
+         * Toggle the play state for a HTML media element with the given ID.
+         *
+         * @param {string} id HTML media element ID.
+         */
+        function togglePlayId(id) {
+            return togglePlayId(document.getElementById(id));
+        }
+
     </script>
 </head>
  
@@ -54,24 +63,24 @@
 <!-- Knettahhh play -->
 		<div class="col-md-8">
 			<button disabled>play</button>
-				<button onclick="togglePlay(document.getElementById('broer'))">Grote broer</button>
-				<button onclick="togglePlay(document.getElementById('dak'))">Dak</button>
-				<button onclick="togglePlay(document.getElementById('goud'))">Goud</button>
-				<button onclick="togglePlay(document.getElementById('knetta'))">Helemaal knett&acirc;h</button>
-				<button onclick="togglePlay(document.getElementById('maat'))">Maat, wat doe jij?</button>
-				<button onclick="togglePlay(document.getElementById('kanka'))">K&acirc;nkahneus</button>
+				<button onclick="togglePlayId('broer')">Grote broer</button>
+				<button onclick="togglePlayId('dak')">Dak</button>
+				<button onclick="togglePlayId('goud')">Goud</button>
+				<button onclick="togglePlayId('knetta')">Helemaal knett&acirc;h</button>
+				<button onclick="togglePlayId('maat')">Maat, wat doe jij?</button>
+				<button onclick="togglePlayId('kanka')">K&acirc;nkahneus</button>
 		 </div>
   	</div>
 
  <!-- Knettahhh pause -->
 		<div class="col-md-8">
 			Pause:
-				  <button onclick="togglePlay(document.getElementById('broer'))">Grote broer</button>
-				  <button onclick="togglePlay(document.getElementById('dak'))">Dak</button>
-				  <button onclick="togglePlay(document.getElementById('goud'))">Goud</button>
-				  <button onclick="togglePlay(document.getElementById('knetta'))">Helemaal knett&acirc;h</button>
-				  <button onclick="togglePlay(document.getElementById('maat'))">Maat, wat doe jij?</button>
-				  <button onclick="togglePlay(document.getElementById('kanka'))">K&acirc;nkahneus</button>
+				  <button onclick="togglePlayId('broer')">Grote broer</button>
+				  <button onclick="togglePlayId('dak')">Dak</button>
+				  <button onclick="togglePlayId('goud')">Goud</button>
+				  <button onclick="togglePlayId('knetta')">Helemaal knett&acirc;h</button>
+				  <button onclick="togglePlayId('maat')">Maat, wat doe jij?</button>
+				  <button onclick="togglePlayId('kanka')">K&acirc;nkahneus</button>
 
 		  </div>
   	</div>
@@ -82,16 +91,16 @@
 
 <!-- CSGO play -->
 			<div class="col-md-8">
-				<button onclick="togglePlay(document.getElementById('planted'))">Planted</button>
-				<button onclick="togglePlay(document.getElementById('defused'))">Defused</button>
-				<button onclick="togglePlay(document.getElementById('ready'))">Ready</button>
+				<button onclick="togglePlayId('planted')">Planted</button>
+				<button onclick="togglePlayId('defused')">Defused</button>
+				<button onclick="togglePlayId('ready')">Ready</button>
 			</div>
 
   <!-- CSGO pause -->
   <div class="col-md-8">
-	  <button onclick="togglePlay(document.getElementById('planted'))">Planted</button>
-	  <button onclick="togglePlay(document.getElementById('defused'))">Defused</button>
-	  <button onclick="togglePlay(document.getElementById('ready'))">Ready</button>
+	  <button onclick="togglePlayId('planted')">Planted</button>
+	  <button onclick="togglePlayId('defused')">Defused</button>
+	  <button onclick="togglePlayId('ready')">Ready</button>
   </div>
 
 
@@ -100,16 +109,16 @@
 
   <!-- music play -->
   <div class="col-md-8">
-			<button onclick="togglePlay(document.getElementById('bochka'))">Bochka, Bass</button>
-			<button onclick="togglePlay(document.getElementById('dawai'))">Dawai Dawai</button>
-			<button onclick="togglePlay(document.getElementById('anthem'))">Russian Anthem</button>
+			<button onclick="togglePlayId('bochka')">Bochka, Bass</button>
+			<button onclick="togglePlayId('dawai')">Dawai Dawai</button>
+			<button onclick="togglePlayId('anthem')">Russian Anthem</button>
 		</div>
 
   <!-- music pause-->
   		<div class="col-md-8">
-			  <button onclick="togglePlay(document.getElementById('bochka'))">Bochka, Bass</button>
-			  <button onclick="togglePlay(document.getElementById('dawai'))">Dawai Dawai</button>
-			  <button onclick="togglePlay(document.getElementById('anthem'))">Russian Anthem</button>
+			  <button onclick="togglePlayId('bochka')">Bochka, Bass</button>
+			  <button onclick="togglePlayId('dawai')">Dawai Dawai</button>
+			  <button onclick="togglePlayId('anthem')">Russian Anthem</button>
 		</div>
 
 
@@ -119,15 +128,15 @@
 
   <!-- Nederlands play-->
   <div class="col-md-8">
-			<button onclick="togglePlay(document.getElementById('man'))">Man man man</button>
-			<button onclick="togglePlay(document.getElementById('amigo'))">Amigo</button>
+			<button onclick="togglePlayId('man')">Man man man</button>
+			<button onclick="togglePlayId('amigo')">Amigo</button>
   </div>
 
   <!-- Nederlands pause-->
   <div class="row">
   <div class="col-md-8">
-	  <button onclick="togglePlay(document.getElementById('man'))">Man man man</button>
-	  <button onclick="togglePlay(document.getElementById('amigo'))">Amigo</button>
+	  <button onclick="togglePlayId('man')">Man man man</button>
+	  <button onclick="togglePlayId('amigo')">Amigo</button>
   </div>
   </div>
 <br>
