@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script type="text/javascript">
+    <script>
         
         /**
          * Toggle the play state of a HTML media element.
@@ -15,12 +15,11 @@
          * play state for.
          */
         function togglePlay(mediaElement) {
-            if(mediaElement.currentTime > 0.0)
-                mediaElement.stop();
-            else {
+            if(mediaElement.currentTime > 0.0) {
                 mediaElement.pause();
                 mediaElement.currentTime = 0.0;
-            }
+            } else
+                mediaElement.play();
         }
 
     </script>
