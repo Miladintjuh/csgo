@@ -17,8 +17,10 @@
         function togglePlay(mediaElement) {
             if(mediaElement.currentTime > 0.0)
                 mediaElement.stop();
-            else
-                mediaElement.play();
+            else {
+                mediaElement.pause();
+                mediaElement.currentTime = 0.0;
+            }
         }
 
     </script>
